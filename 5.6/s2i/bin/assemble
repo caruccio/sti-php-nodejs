@@ -6,6 +6,9 @@ echo "---> Installing application source..."
 cp -Rf /tmp/src/. ./
 
 if [ -f composer.json ]; then
+  echo "---> Setting date.timezone = America/Sao_Paulo"
+  sed -ei 's,^;date.timezone\s*=\s*$,date.timezone = America/Sao_Paulo,' /etc/opt/rh/rh-php56/php.ini
+
   echo "Found 'composer.json', installing dependencies using composer.phar... "
 
   # Install Composer
