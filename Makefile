@@ -1,5 +1,5 @@
 # Include common Makefile code.
-BASE_IMAGE_NAME = php
+BASE_IMAGE_NAME = php-nodejs
 VERSIONS = 5.5 5.6
 OPENSHIFT_NAMESPACES = 5.5
 
