@@ -11,8 +11,7 @@ if [ -f composer.json ]; then
   # Install Composer
   php -r "readfile('https://getcomposer.org/installer');" | php
 
-  composer config -g github-oauth.github.com 82e89eaaa111959be0170e844d3b03676a5b0559 || true
-  ./composer.phar config -g github-oauth.github.com 82e89eaaa111959be0170e844d3b03676a5b0559 || true
+  ./composer.phar config -g github-oauth.github.com 82e89eaaa111959be0170e844d3b03676a5b0559
 
   # Install App dependencies using Composer
   ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
